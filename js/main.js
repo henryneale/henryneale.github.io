@@ -29,3 +29,8 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+// Add copyright years
+document.querySelectorAll('footer span').forEach((el) => {
+  el.textContent = new Date().getFullYear();
+});
